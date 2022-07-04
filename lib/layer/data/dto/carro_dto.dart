@@ -15,7 +15,7 @@ class CarroDto extends CarroEntity {
     return {'placa': placa, 'qtdPortas': qtdPortas, 'valor': valor};
   }
 
-  CarroDto fromMap(Map map) {
+ static CarroDto fromMap(Map map) {
     return CarroDto(
         placa: map['placa'], qtdPortas: map['qtdPortas'], valor: map['valor']);
   }
